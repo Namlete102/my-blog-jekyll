@@ -1,0 +1,25 @@
+# _config.yml
+title: "Untitled"
+description: "Nơi tôi viết và sưu tập về toán học."
+baseurl: "" # Để trống nếu host tại username.github.io
+url: "https://namlete102.github.io" # Thay bằng URL thực tế của bạn
+
+# Cấu hình cho các bài viết (nếu dùng _posts)
+permalink: /:categories/:year/:month/:day/:title:output_ext
+
+# Nếu bạn muốn giữ các bài viết trong thư mục 'contents', hãy dùng collections
+collections:
+  contents:
+    output: true
+    permalink: /:collection/:path/
+
+# Cấu hình mặc định cho layout
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+# _config.yml
+include:
+  - assets
