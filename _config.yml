@@ -1,7 +1,7 @@
 title: "Untitled"
 description: "Nơi tôi viết và sưu tập về toán học."
 baseurl: ""
-url: "https://namlete102.github.io"
+url: "namlete102.github.io/my-blog-jekyll/"
 
 # Giữ theme GitHub Pages đã cấu hình sẵn
 theme: jekyll-theme-cayman     # đổi thành minima / primer nếu dự án của bạn dùng theme khác

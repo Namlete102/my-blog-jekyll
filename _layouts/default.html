@@ -3,28 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% if page.title %}{{ page.title }} — {% endif %}{{ site.title }}</title>
-
-    <!-- CSS: import theme gốc + tùy chỉnh -->
-    <link rel="stylesheet" href="{{ '/assets/css/style.scss' | relative_url }}">
-
-    <!-- MathJax cho công thức toán -->
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+    <!-- Trỏ về file style.css -->
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    
+    <!-- MathJax -->
     <script>
     MathJax = {
       tex: {
         inlineMath: [['$', '$'], ['\\(', '\\)']],
-        displayMath: [['$$', '$$'], ['\\[', '\\]']],
-        processEscapes: true
-      },
-      svg: { fontCache: 'global' }
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      }
     };
     </script>
-    <script id="MathJax-script" async
-      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
     <div class="container">
+        <!-- Phần Header -->
         <header>
+            <h1><a href="{{ '/' | relative_url }}">{{ page.title | default: "Untitled" }}</a></h1>
             <nav>
                 <a href="{{ '/' | relative_url }}">home</a>
                 <a href="{{ '/archive' | relative_url }}">archive</a>
@@ -33,16 +31,20 @@
             </nav>
         </header>
 
+        <!-- Phần Nội dung -->
         <main>
             {{ content }}
         </main>
 
+        <!-- Phần Footer -->
         <footer>
-            <p>
-                <a href="https://github.com/Namlete102">Github</a> .
+            <div class="footer-links">
+                <a href="https://github.com/Namlete102">Github</a> . 
                 <a href="mailto:your-email@example.com">Contact</a>
-            </p>
-            <p>&copy; {{ 'now' | date: "%Y" }} Namlete</p>
+            </div>
+            <div class="footer-copy">
+                &copy;{{ 'now' | date: "%Y" }} Namlete
+            </div>
         </footer>
     </div>
 </body>
