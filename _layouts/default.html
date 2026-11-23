@@ -4,25 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
-    <!-- Trỏ về file style.css -->
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
     
     <!-- MathJax -->
     <script>
-    MathJax = {
-      tex: {
-        inlineMath: [['$', '$'], ['\\(', '\\)']],
-        displayMath: [['$$', '$$'], ['\\[', '\\]']]
-      }
-    };
+    MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$', '$$'], ['\\[', '\\]']] } };
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
     <div class="container">
-        <!-- Phần Header -->
+        <!-- Header: Không có H1, chỉ có Nav -->
         <header>
-            <h1><a href="{{ '/' | relative_url }}">{{ page.title | default: "Untitled" }}</a></h1>
             <nav>
                 <a href="{{ '/' | relative_url }}">home</a>
                 <a href="{{ '/archive' | relative_url }}">archive</a>
@@ -31,12 +24,10 @@
             </nav>
         </header>
 
-        <!-- Phần Nội dung -->
         <main>
             {{ content }}
         </main>
 
-        <!-- Phần Footer -->
         <footer>
             <div class="footer-links">
                 <a href="https://github.com/Namlete102">Github</a> . 

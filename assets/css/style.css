@@ -138,3 +138,42 @@ footer .footer-copy {
     margin-top: 10px;
     color: #333;
 }
+
+/* --- CSS CHO TRANG BÀI VIẾT (POST) --- */
+.post {
+    max-width: 800px; /* Thu hẹp nội dung bài viết cho dễ đọc */
+    margin: 0 auto;
+}
+
+.post .post-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4rem; /* Cỡ chữ vừa phải như ảnh */
+    font-weight: bold;
+    text-align: center;
+    margin: 30px 0 15px 0;
+    line-height: 1.4;
+}
+
+.post .post-meta {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.95rem;
+    color: #777; /* Màu xám nhạt */
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0; /* Đường kẻ dưới meta */
+}
+
+.post .post-tags {
+    color: #0b5fff; /* Tags màu xanh */
+}
+
+.post .post-content {
+    font-size: 1.05rem;
+}
+
+/* Xử lý hr trong bài viết */
+.post .post-content hr {
+    border-top: 2px solid #ddd;
+    margin: 20px 0;
+}
