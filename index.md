@@ -2,6 +2,7 @@
 layout: default
 title: Untitled
 ---
+
 Đây là nơi lưu trữ những bài viết, ghi chú của tôi, cũng như sưu tập về những bài viết được trình bày bởi các tác giả khác về lĩnh vực chuyên mà tôi yêu thích là toán học và đôi khi sẽ có cả vật lý, vì chúng cũng thật sự mang lại cảm giác thú vị, hấp dẫn và cảm hứng trong tôi.
 
 <hr>

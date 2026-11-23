@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Tags
+title: Untitled
 ---
 {% for tag in site.tags %}
 ## {{ tag[0] }}
