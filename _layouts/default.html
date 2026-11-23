@@ -14,8 +14,9 @@
 </head>
 <body>
     <div class="container">
-        <!-- Header: Không có H1, chỉ có Nav -->
+        <!-- Phần Header -->
         <header>
+            <h1><a href="{{ '/' | relative_url }}">{{ page.title | default: "Untitled" }}</a></h1>
             <nav>
                 <a href="{{ '/' | relative_url }}">home</a>
                 <a href="{{ '/archive' | relative_url }}">archive</a>
